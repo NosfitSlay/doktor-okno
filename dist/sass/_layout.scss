@@ -1,0 +1,23 @@
+header{
+  height: 139px;
+  .logo{
+    ul{
+      display: inline-block;
+      vertical-align: top;
+    }
+    &__companyName{
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 2.8em;
+      color: $lightMainColor;
+
+      span{
+        font-weight: bold;
+        color: $darkMainColor;
+      }
+    }
+    &__aboutServices{
+      font-size: 1.2em;
+    }
+  }
+}
