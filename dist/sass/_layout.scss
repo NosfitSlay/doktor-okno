@@ -170,6 +170,7 @@ header{
     color: $darkMainColor;
     width: 153px;
     padding-top: 14px;
+    text-decoration: underline $lightMailColor3;
   }
   &__fixAlumWindows{
     width: 78px;
@@ -191,14 +192,50 @@ header{
   }
   &__setPlastOtkos{
     background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -159px; width: 61px; height: 36px;
+    background-position: -5px -159px; width: 61px; height: 41px;
   }
   &__moskitGrid{
     background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -559px; width: 40px; height: 39px;
+    background-position: -5px -559px; width: 40px; height: 41px;
+  }
+  &__regPlastOkon{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -304px; width: 56px; height: 50px;
+  }
+  &__fixCangeGlass{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -459px; width: 53px; height: 50px;
+  }
+  &__changeplotnitel{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -359px; width: 55px; height: 50px;
+  }
+  &__obdelkaBalkov{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -412px; width: 54px; height: 47px;
+  }
+  &__uteplenOkon{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -512px; width: 42px; height: 43px;
+  }
+  &__vnutrPodokonik{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -200px; width: 58px; height: 45px;
+  }
+  div:nth-child(5){
+    span{
+      padding-top: 22px;
+    }
+  }
+  div:nth-child(6){
+    span{
+      padding-top: 22px;
+    }
   }
 }
-
+.uslugiIc__bottom{
+  padding-top: 105px;
+}
 //.fixalmwindows-ic, .fixwoodwindows-ic, .fixplcsticwindows-ic, .setplacticotkos-ic, .vnutrpodokonik-ic,
 //.fixplasticdoors-ic, .regplasticwindows-ic, .zamenauplotnitelaplastwind-ic, .obdelkabalkonow-ic, .remontizamenasteklopaketow-ic,
 //.uteplenieokon-ic, .moskgrid-ic
@@ -207,11 +244,11 @@ header{
 //.fixwoodwindows-ic { background-position: -5px -53px; width: 71px; height: 48px; }
 //.fixplcsticwindows-ic { background-position: -5px -106px; width: 64px; height: 48px; }
 //.setplacticotkos-ic {  }
-//.vnutrpodokonik-ic { background-position: -5px -200px; width: 58px; height: 46px; }
+//.vnutrpodokonik-ic { }
 //.fixplasticdoors-ic {  }
 //.regplasticwindows-ic { background-position: -5px -304px; width: 56px; height: 50px; }
-//.zamenauplotnitelaplastwind-ic { background-position: -5px -359px; width: 55px; height: 48px; }
-//.obdelkabalkonow-ic { background-position: -5px -412px; width: 54px; height: 42px; }
+//.zamenauplotnitelaplastwind-ic {  }
+//.obdelkabalkonow-ic {  }
 //.remontizamenasteklopaketow-ic { background-position: -5px -459px; width: 53px; height: 48px; }
-//.uteplenieokon-ic { background-position: -5px -512px; width: 42px; height: 42px; }
+//.uteplenieokon-ic {  }
 //.moskgrid-ic { background-position: -5px -559px; width: 40px; height: 39px; }
