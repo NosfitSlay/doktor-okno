@@ -26,6 +26,9 @@ ul{
   list-style: none;
   padding: 0;
 }
+//li{
+//  list-style-type: none;
+//}
 
 h1,h2,h3,h4,h5,h6,p{
   margin: 0;
@@ -33,4 +36,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 input, button, textarea, select{
   outline: none;
+}
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
 }

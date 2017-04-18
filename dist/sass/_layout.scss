@@ -1,9 +1,8 @@
 header{
-  height: 139px;
+  height: 125px;
   display: flex;
   align-items: center;
   .logo{
-
     ul{
       display: inline-block;
       vertical-align: top;
@@ -27,7 +26,7 @@ header{
     display: flex;
     align-items: center;
     img{
-      padding-left: 35px;
+      padding-left: 96px;
     }
     &__method{
       display: inline-block;
@@ -36,4 +35,183 @@ header{
       padding-left: 26px;
     }
   }
+  .phonesWrap{
+    padding-left:33px;
+  }
+  .phones{
+      display: flex;
+      align-items: center;
+    img{
+      height:100%;
+    }
+    .contacts{
+      display: inline-block;
+      padding-left: 33px;
+      font-size: 1.8em;
+      &__number{
+        span{
+          font-size: 1.33em;
+          font-weight: bold;
+        }
+      }
+      &__callBack{
+        display: inline-block;
+        color: $darkMainColor;
+        border-bottom: 1px dotted $darkMainColor;
+        font-size: 0.77em;
+      }
+    }
+    .contacts-ic{
+      padding-left: 16px;
+    }
+    & + .phones{
+      padding-top: 16px;
+    }
+    img + img{
+      padding-left: 6px;
+    }
+  }
+
+  .callToOrder{
+    position: relative;
+   padding-left: 149px;
+    &__wrapper{
+      display: inline;
+    }
+    &__logo{
+     position: absolute;
+      top: -39px;
+      left: 30px;
+    }
+    &__caption{
+      color: $lightMainColor;
+      font-size: 1.8em;
+      font-weight: lighter;
+      text-transform: uppercase;
+      span{
+        color: $darkMainColor;
+        font-weight: bold;
+      }
+    }
+    &__result{
+      color: $lighTextColor;
+      font-size: 1.2em;
+      width: 115px;
+    }
+  }
 }
+.headerNav{
+  position: relative;
+}
+.headerNav_menu{
+  position: absolute;
+  letter-spacing : -.36em;
+  top: -10px;
+  :first-child{
+    border-radius: 3px 0 0 3px;
+  }
+  :last-child{
+    border-radius: 0 3px 3px 0;
+  }
+  li{
+    letter-spacing: normal;
+    display: inline-block;
+    height: 100%;
+    background: url("../img/navBtnBG.png") repeat-x;
+    border-bottom: 3px solid $borderBtnColor;
+    & + li {
+      border-left:1px solid $borderBtnColor;
+    }
+    a{
+      font-size: 1.8em;
+      display: block;
+      padding: 15px 27px;
+      color: #fff ;
+    }
+  }
+}
+.fixingWindowsInRegion{
+  background: url("../img/fixingWindows.jpg") no-repeat;
+  height: 461px;
+  background-size: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 16px;
+  &__wrap{
+    display: inline-block;
+    width: 945px;
+    text-align: center;
+  }
+  &__title{
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 4em;
+    background-color: $lightMainColor2;
+    color: #fff;
+  }
+  &__this{
+    color: #000;
+    padding-top: 36px;
+    font-size: 2.4em;
+  }
+}
+.uslugiIc{
+  padding-top: 41px;
+  div{
+    display: inline-block;
+    text-align: center;
+  }
+  span{
+    display: inline-block;
+    font-size: 1.4em;
+    color: $darkMainColor;
+    width: 153px;
+    padding-top: 14px;
+  }
+  &__fixAlumWindows{
+    width: 78px;
+    height: 48px;
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -0px;
+  }
+  &__fixPlastWindows{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -106px; width: 64px; height: 48px;
+  }
+  &__fixWoodWindows{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -53px; width: 71px; height: 48px;
+  }
+  &__fixPlastDoors{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -251px; width: 57px; height: 48px;
+  }
+  &__setPlastOtkos{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -159px; width: 61px; height: 36px;
+  }
+  &__moskitGrid{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -559px; width: 40px; height: 39px;
+  }
+}
+
+//.fixalmwindows-ic, .fixwoodwindows-ic, .fixplcsticwindows-ic, .setplacticotkos-ic, .vnutrpodokonik-ic,
+//.fixplasticdoors-ic, .regplasticwindows-ic, .zamenauplotnitelaplastwind-ic, .obdelkabalkonow-ic, .remontizamenasteklopaketow-ic,
+//.uteplenieokon-ic, .moskgrid-ic
+//{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+//.fixalmwindows-ic {  }
+//.fixwoodwindows-ic { background-position: -5px -53px; width: 71px; height: 48px; }
+//.fixplcsticwindows-ic { background-position: -5px -106px; width: 64px; height: 48px; }
+//.setplacticotkos-ic {  }
+//.vnutrpodokonik-ic { background-position: -5px -200px; width: 58px; height: 46px; }
+//.fixplasticdoors-ic {  }
+//.regplasticwindows-ic { background-position: -5px -304px; width: 56px; height: 50px; }
+//.zamenauplotnitelaplastwind-ic { background-position: -5px -359px; width: 55px; height: 48px; }
+//.obdelkabalkonow-ic { background-position: -5px -412px; width: 54px; height: 42px; }
+//.remontizamenasteklopaketow-ic { background-position: -5px -459px; width: 53px; height: 48px; }
+//.uteplenieokon-ic { background-position: -5px -512px; width: 42px; height: 42px; }
+//.moskgrid-ic { background-position: -5px -559px; width: 40px; height: 39px; }
