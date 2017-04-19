@@ -4,3 +4,189 @@
 @import 'reset';
 @import 'default-class';
 @import 'layout';
+
+.fixingWindowsInRegion{
+  background: url("../img/fixingWindows.jpg") no-repeat;
+  height: 461px;
+  background-size: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25px;
+  &__wrap{
+    display: inline-block;
+    width: 945px;
+    text-align: center;
+  }
+  &__title{
+    font-weight: bold;
+    padding: 5px 15px;
+    font-size: 4em;
+    background-color: $lightMainColor2;
+    color: #fff;
+  }
+  &__this{
+    color: #000;
+    padding-top: 36px;
+    font-size: 2.4em;
+  }
+}
+.uslugiIc{
+  padding-bottom: 30px;
+  div{
+    display: inline-block;
+    text-align: center;
+  }
+  span{
+    display: inline-block;
+    font-size: 1.4em;
+    color: $darkMainColor;
+    width: 153px;
+    padding-top: 14px;
+    text-decoration: underline $lightMailColor3;
+  }
+  &__fixAlumWindows{
+    width: 78px;
+    height: 48px;
+    background-image: url("../img/sprite-ic.png");
+    background-repeat: no-repeat;
+    background-position: -5px -0px;
+  }
+  &__fixPlastWindows{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -106px; width: 64px; height: 48px;
+  }
+  &__fixWoodWindows{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -53px; width: 71px; height: 48px;
+  }
+  &__fixPlastDoors{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -251px; width: 57px; height: 48px;
+  }
+  &__setPlastOtkos{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -159px; width: 61px; height: 41px;
+  }
+  &__moskitGrid{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -559px; width: 40px; height: 41px;
+  }
+  &__regPlastOkon{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -304px; width: 56px; height: 50px;
+  }
+  &__fixCangeGlass{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -459px; width: 53px; height: 50px;
+  }
+  &__changeplotnitel{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -359px; width: 55px; height: 50px;
+  }
+  &__obdelkaBalkov{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -412px; width: 54px; height: 47px;
+  }
+  &__uteplenOkon{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -512px; width: 42px; height: 43px;
+  }
+  &__vnutrPodokonik{
+    background: url("../img/sprite-ic.png") no-repeat;
+    background-position: -5px -200px; width: 58px; height: 45px;
+  }
+  div:nth-child(5){
+    span{
+      padding-top: 22px;
+    }
+  }
+  div:nth-child(6){
+    span{
+      padding-top: 22px;
+    }
+  }
+}
+.uslugiIc__link{
+  margin-top: 40px;
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.news-item{
+  margin-top: 30px;
+}
+.news-item__head{
+  padding: 0;
+  margin: 0;
+  h3{
+    color:  #3b7db0;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+  }
+  img{
+
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+.news-item__text{
+  color:  #000000;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  line-height:18px;
+}
+
+
+.content{
+  h2{
+    color:  #000000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  p{
+    color:  #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 20px;
+
+  }
+  ul{
+    margin-top: -20px;
+    list-style-type: circle;
+    padding-left: 20px;
+    color:#223;
+  }
+  li{
+    color:#3b7db0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  li span{
+    color:  #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  h4{
+    color:  #000000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+.sidebar__slider{
+  margin-top: 30px;
+}
