@@ -1,5 +1,14 @@
-header{
-  height: 125px;
+html,body{
+  font-family: Calibri;
+}
+body{
+  background-image: url("../img/line-bottom.jpg");
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+.header{
+  height: 137px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   .logo{
@@ -37,6 +46,7 @@ header{
   }
   .phonesWrap{
     padding-left:33px;
+    margin-top: -20px;
   }
   .phones{
       display: flex;
@@ -65,7 +75,7 @@ header{
       padding-left: 16px;
     }
     & + .phones{
-      padding-top: 16px;
+      padding-top: 9px;
     }
     img + img{
       padding-left: 6px;
@@ -102,22 +112,30 @@ header{
 }
 .headerNav{
   position: relative;
+  width: 100%;
+  margin-top: -26px;
+  
 }
 .headerNav_menu{
-  position: absolute;
   letter-spacing : -.36em;
-  top: -10px;
-  :first-child{
+  width: 100%;
+  background: linear-gradient(to bottom, #87c9f1, #4c9ed3);
+  display: flex;
+  justify-content: space-between;
+  li:first-child{
     border-radius: 3px 0 0 3px;
+    padding-left: 10px;
   }
-  :last-child{
+  li:last-child{
     border-radius: 0 3px 3px 0;
+    padding-right: 10px;
   }
   li{
     letter-spacing: normal;
     display: inline-block;
     height: 100%;
-    background: url("../img/navBtnBG.png") repeat-x;
+    flex-grow: 1;
+    text-align: center;
     border-bottom: 3px solid $borderBtnColor;
     & + li {
       border-left:1px solid $borderBtnColor;
@@ -125,7 +143,7 @@ header{
     a{
       font-size: 1.8em;
       display: block;
-      padding: 15px 27px;
+      padding: 15px 0;
       color: #fff ;
     }
   }
@@ -138,8 +156,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-top: 16px;
+  margin-top: -25px;
   &__wrap{
     display: inline-block;
     width: 945px;
@@ -159,7 +176,7 @@ header{
   }
 }
 .uslugiIc{
-  padding-top: 41px;
+  padding-bottom: 40px;
   div{
     display: inline-block;
     text-align: center;
@@ -175,7 +192,8 @@ header{
   &__fixAlumWindows{
     width: 78px;
     height: 48px;
-    background: url("../img/sprite-ic.png") no-repeat;
+    background-image: url("../img/sprite-ic.png");
+    background-repeat: no-repeat;
     background-position: -5px -0px;
   }
   &__fixPlastWindows{
@@ -233,9 +251,109 @@ header{
     }
   }
 }
-.uslugiIc__bottom{
-  padding-top: 105px;
+.uslugiIc__link{
+margin-top: 40px;
+display: inline-block;
+margin-bottom: 60px;
 }
+.sidebar{
+  margin-top: 8px;
+}
+.sidebar__title{
+  color:  #000000;
+font-size: 24px;
+font-weight: 600;
+line-height: 1;
+text-align: left;
+position: relative;
+margin-bottom: 10px;
+  &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 65px;
+    height: 2px;
+    background: #000;
+    bottom: -10px;
+  }
+}
+.news-item{
+  margin-top: 30px;
+}
+.news-item__head{
+     padding: 0;
+     margin: 0;
+h3{
+color:  #3b7db0;
+font-size: 18px;
+font-weight: 300;
+text-align: left;
+}
+  img{
+ 
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+.news-item__text{
+  color:  #000000;
+font-size: 14px;
+font-weight: 400;
+text-align: left;
+line-height:18px;
+}
+.content{
+  h2{
+    color:  #000000;
+font-size: 30px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+margin-bottom: 30px;
+  }
+  p{
+    color:  #000000;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+margin-bottom: 20px;
+
+  }
+  ul{
+    margin-top: -20px;
+    list-style-type: circle;
+    padding-left: 20px;
+    color:#223;
+  }
+  li{
+    color:#3b7db0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  li span{
+    color:  #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  h4{
+    color:  #000000;
+font-size: 24px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+margin-bottom: 30px;
+  }
+}
+.sidebar__slider{
+  margin-top: 30px;
+}
+
+
+
 //.fixalmwindows-ic, .fixwoodwindows-ic, .fixplcsticwindows-ic, .setplacticotkos-ic, .vnutrpodokonik-ic,
 //.fixplasticdoors-ic, .regplasticwindows-ic, .zamenauplotnitelaplastwind-ic, .obdelkabalkonow-ic, .remontizamenasteklopaketow-ic,
 //.uteplenieokon-ic, .moskgrid-ic
