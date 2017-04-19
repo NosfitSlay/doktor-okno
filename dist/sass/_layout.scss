@@ -176,7 +176,7 @@ body{
   }
 }
 .uslugiIc{
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   div{
     display: inline-block;
     text-align: center;
@@ -351,22 +351,47 @@ margin-bottom: 30px;
 .sidebar__slider{
   margin-top: 30px;
 }
+.footer{
+  @extend .header;
 
-
-
-//.fixalmwindows-ic, .fixwoodwindows-ic, .fixplcsticwindows-ic, .setplacticotkos-ic, .vnutrpodokonik-ic,
-//.fixplasticdoors-ic, .regplasticwindows-ic, .zamenauplotnitelaplastwind-ic, .obdelkabalkonow-ic, .remontizamenasteklopaketow-ic,
-//.uteplenieokon-ic, .moskgrid-ic
-//{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
-//.fixalmwindows-ic {  }
-//.fixwoodwindows-ic { background-position: -5px -53px; width: 71px; height: 48px; }
-//.fixplcsticwindows-ic { background-position: -5px -106px; width: 64px; height: 48px; }
-//.setplacticotkos-ic {  }
-//.vnutrpodokonik-ic { }
-//.fixplasticdoors-ic {  }
-//.regplasticwindows-ic { background-position: -5px -304px; width: 56px; height: 50px; }
-//.zamenauplotnitelaplastwind-ic {  }
-//.obdelkabalkonow-ic {  }
-//.remontizamenasteklopaketow-ic { background-position: -5px -459px; width: 53px; height: 48px; }
-//.uteplenieokon-ic {  }
-//.moskgrid-ic { background-position: -5px -559px; width: 40px; height: 39px; }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo{
+    filter: grayscale(100%);
+    display: inline-block;
+  }
+  .category{
+    display: inline-block;
+    &__list{
+      display: inline-block;
+    }
+    &__item{
+      a{
+        font-size: 1.2em;
+        color: $ligtFooterColor;
+        border-bottom: 1px dotted $loghtFooterColor2;
+      }
+    }
+  }
+  .category__list + .category__list{
+    padding-left: 39px;
+  }
+  .category__item + .category__item{
+    padding-top: 7px;
+  }
+  .phonesWrap{
+    //padding-left: 33px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .companyDetals{
+    &__items{
+      display: inline-block;
+      font-size: 1.2em;
+    }
+    .companyDetals__items + .companyDetals__items{
+      padding-left: 20px;
+    }
+  }
+}
