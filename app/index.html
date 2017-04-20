@@ -53,7 +53,7 @@
                 </li>
             </ul>
             <div class="callToOrder">
-                <a href="#" class="orderCallback">
+                <a href="#" class="orderCallback" data-fancybox data-caption="My caption">
                     <img src="img/toOrderCall.png" alt="OrderCall" class="callToOrder__logo">
                     <div class="callToOrder__wrapper">
                         <h3 class="callToOrder__caption text-right">Закажите <span>звонок</span></h3>
@@ -333,27 +333,22 @@
         </div>
     </main>
      <!--PopUp-->
-            <div class="modalCallBack__openBackground"></div>
-            <div class="modalCallBack__open">
-                <div class="modalCallBack__close close-pop-up">
-                    <span class="">X</span>
-                </div>
+    <div class="modalCallBack__openBackground"></div>
+    <div class="modalCallBack__open">
+        <div class="modalCallBack__close close-pop-up">
+            <span class="">X</span>
+        </div>
 
-                <div class="modalCallBack__formTitle">
-                    <p>Заказать обратный звонок</p>
-                    <!--<span>Доктор Окно</span>-->
-                    <form action="modalCallBack__form" id="pop-checkbox">
-                        <input type="text" class="modalCallBack__input" name="user-name" value="" placeholder="Имя" required>
-                        <input type="text" class="modalCallBack__input" name="phone" value="" placeholder="Телефон" required>
-                        <button href="#"   class="modalCallBack__sendOrder" type="submit">Заказать</button>
-                    </form>
-                </div>
-            </div>
-
-
-
-
-
+        <div class="modalCallBack__formTitle">
+            <p>Заказать обратный звонок</p>
+            <!--<span>Доктор Окно</span>-->
+            <form action="modalCallBack__form" id="pop-checkbox">
+                <input type="text" class="modalCallBack__input" name="user-name" value="" placeholder="Имя" required>
+                <input type="text" class="modalCallBack__input" name="phone" value="" placeholder="Телефон" required>
+                <button href="#"   class="modalCallBack__sendOrder" type="submit">Заказать</button>
+            </form>
+        </div>
+    </div>
 
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
