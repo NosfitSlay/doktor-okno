@@ -11,6 +11,8 @@
 <!--
     <link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link media="all" rel="stylesheet" href="css/slick.css" type="text/css">-->
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <link media="all" rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -244,18 +246,15 @@
                                 </div>
                                 <div class="sidebar__title">Сертификаты</div>
                                 <div class="sidebar__slider">
-                                    <div class="sidebar__slider__item">
-                                        <img src="img/sertificate.jpg" alt="">
-                                    </div>
-                                    <div class="sidevar__slider__item">
-                                        <img src="img/sertificate.jpg" alt="">
-                                    </div>
-
-                                    <div class="sidevar__slider__item">
-                                        <img src="img/sertificate.jpg" alt="">
-                                    </div>
-                                   
-
+                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Caption #1">
+                                        <img src="img/sertificate.jpg" alt="" >
+                                    </a>
+                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Caption #1">
+                                        <img src="img/sertificate.jpg" alt="" >
+                                    </a>
+                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Caption #1">
+                                        <img src="img/sertificate.jpg" alt="" >
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -289,11 +288,11 @@
                         <li class="category__item"><a href="#">СМИ о нас</a></li>
                         <li class="category__item"><a href="#">Новости</a></li>
                     </ul>
-                    <ul class="category__list">
-                        <li class="category__item"><a href="#">Фермеры</a></li>
-                        <li class="category__item"><a href="#">Стать нашим фермером</a></li>
-                        <li class="category__item"><a href="#">Рецепты</a></li>
-                    </ul>
+                    <!--<ul class="category__list">-->
+                        <!--<li class="category__item"><a href="#">Фермеры</a></li>-->
+                        <!--<li class="category__item"><a href="#">Стать нашим фермером</a></li>-->
+                        <!--<li class="category__item"><a href="#">Рецепты</a></li>-->
+                    <!--</ul>-->
                 </div>
 
                 <ul class="phonesWrap">
@@ -355,9 +354,10 @@
 
 
 
-<!--
 
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>-->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
     <script src="js/libs.min.js"></script>
 </body>
 
