@@ -41,3 +41,8 @@ input, button, textarea, select{
   padding-right: 15px;
   padding-left: 15px;
 }
+body{
+  @media (max-width: 991px) {
+    font-size: 9px;
+  }
+}

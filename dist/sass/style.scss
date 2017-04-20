@@ -18,6 +18,8 @@
   margin-top: -25px;
   position: relative;
   z-index: 1;
+  //max-width: 100%;
+  //height: auto;
   &__wrap{
     display: inline-block;
     width: 945px;
@@ -38,7 +40,6 @@
 }
 .uslugiIc{
   padding-bottom: 30px;
-  
   div{
     display: inline-block;
     text-align: center;
@@ -120,6 +121,12 @@
   margin-bottom: 60px;
   &:hover span{
     color:#222;
+  }
+  div{
+    @media (max-width: 991px) {
+      margin: 0 auto;
+      display: block;
+    }
   }
 }
 
