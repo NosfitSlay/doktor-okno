@@ -17,7 +17,15 @@ body{
     margin-top: 0;
     justify-content: space-between;
   }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
   .logo{
+    img{
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
     ul{
       display: inline-block;
       vertical-align: top;
@@ -62,7 +70,6 @@ body{
   .phonesWrap{
     padding-left:33px;
     margin-top: -20px;
-
     @media (max-width: 1199px) {
       padding-left: 0;
     }
@@ -72,11 +79,19 @@ body{
       align-items: center;
     img{
       height:100%;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
     .contacts{
       display: inline-block;
       padding-left: 33px;
       font-size: 1.8em;
+      @media (max-width: 768px) {
+        font-size: 10px;
+        padding-left: 0px;
+        font-size: 1em;
+      }
       &__number{
         span{
           font-size: 1.33em;
@@ -88,13 +103,22 @@ body{
         color: $darkMainColor;
         border-bottom: 1px dotted $darkMainColor;
         font-size: 0.77em;
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
     .contacts-ic{
       padding-left: 16px;
+      @media (max-width: 768px) {
+        padding-left: 0;
+      }
     }
     & + .phones{
       padding-top: 9px;
+      @media (max-width: 768px) {
+        padding-top: 4px;
+      }
     }
     img + img{
       padding-left: 6px;
@@ -241,6 +265,9 @@ margin-bottom: 10px;
     margin-top: 0;
   }
   .companyDetals{
+    @media (max-width: 768px){
+      display: none;
+    }
     &__items{
       display: inline-block;
       font-size: 1.2em;
@@ -256,6 +283,9 @@ margin-bottom: 10px;
   }
 }
 .sidebar__slider{
+  @media (max-width: 767px){
+    padding-bottom: 10px;
+  }
   img{
     width: 100%;
   }
@@ -273,7 +303,6 @@ margin-bottom: 10px;
     transform: rotate(180deg);
     right: 0px;
   }
-
 }
 
 //modal

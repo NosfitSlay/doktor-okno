@@ -45,7 +45,10 @@ body{
   @media (max-width: 991px) {
     font-size: 9px;
   }
-    @media (max-width: 864px) {
+  @media (max-width: 864px) {
     font-size: 8px;
+  }
+    @media (max-width: 768px) {
+    font-size: 7px;
   }
 }

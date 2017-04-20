@@ -1,6 +1,6 @@
 
  $(function() {
-       $('.sidebar__slider').slick({
+    $('.sidebar__slider').slick({
         autoplay: true,
         arrows: true,
         prevArrow:'<button type="button" class="slick-prev"></button>',
@@ -18,6 +18,8 @@
        $(".modalCallBack__openBackground").fadeOut();
        $(".modalCallBack__open").fadeOut();
     });
+
+    $('#menu').slicknav({
+        prependTo:'.demo1'
+    }) 
  });
-
-
