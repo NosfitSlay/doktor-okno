@@ -6,6 +6,7 @@ body{
   background-repeat: repeat-x;
   background-position: left top;
 }
+
 .header{
   height: 137px;
   margin-top: 15px;
@@ -114,7 +115,7 @@ body{
   position: relative;
   width: 100%;
   margin-top: -26px;
-  
+  z-index: 2;
 }
 .headerNav_menu{
   letter-spacing : -.36em;
@@ -130,12 +131,17 @@ body{
     border-radius: 0 3px 3px 0;
     padding-right: 10px;
   }
+  li:hover{
+    background: linear-gradient(to bottom, #ccf3e9, #4c9ed3);
+  }
   li{
+    background: linear-gradient(to bottom, #87c9f1, #4c9ed3);
     letter-spacing: normal;
     display: inline-block;
     height: 100%;
     flex-grow: 1;
     text-align: center;
+    transition:all 400ms;
     border-bottom: 3px solid $borderBtnColor;
     & + li {
       border-left:1px solid $borderBtnColor;
@@ -148,114 +154,7 @@ body{
     }
   }
 }
-.fixingWindowsInRegion{
-  background: url("../img/fixingWindows.jpg") no-repeat;
-  height: 461px;
-  background-size: 100%;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -25px;
-  &__wrap{
-    display: inline-block;
-    width: 945px;
-    text-align: center;
-  }
-  &__title{
-    font-weight: bold;
-    padding: 5px 15px;
-    font-size: 4em;
-    background-color: $lightMainColor2;
-    color: #fff;
-  }
-  &__this{
-    color: #000;
-    padding-top: 36px;
-    font-size: 2.4em;
-  }
-}
-.uslugiIc{
-  padding-bottom: 30px;
-  div{
-    display: inline-block;
-    text-align: center;
-  }
-  span{
-    display: inline-block;
-    font-size: 1.4em;
-    color: $darkMainColor;
-    width: 153px;
-    padding-top: 14px;
-    text-decoration: underline $lightMailColor3;
-  }
-  &__fixAlumWindows{
-    width: 78px;
-    height: 48px;
-    background-image: url("../img/sprite-ic.png");
-    background-repeat: no-repeat;
-    background-position: -5px -0px;
-  }
-  &__fixPlastWindows{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -106px; width: 64px; height: 48px;
-  }
-  &__fixWoodWindows{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -53px; width: 71px; height: 48px;
-  }
-  &__fixPlastDoors{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -251px; width: 57px; height: 48px;
-  }
-  &__setPlastOtkos{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -159px; width: 61px; height: 41px;
-  }
-  &__moskitGrid{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -559px; width: 40px; height: 41px;
-  }
-  &__regPlastOkon{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -304px; width: 56px; height: 50px;
-  }
-  &__fixCangeGlass{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -459px; width: 53px; height: 50px;
-  }
-  &__changeplotnitel{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -359px; width: 55px; height: 50px;
-  }
-  &__obdelkaBalkov{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -412px; width: 54px; height: 47px;
-  }
-  &__uteplenOkon{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -512px; width: 42px; height: 43px;
-  }
-  &__vnutrPodokonik{
-    background: url("../img/sprite-ic.png") no-repeat;
-    background-position: -5px -200px; width: 58px; height: 45px;
-  }
-  div:nth-child(5){
-    span{
-      padding-top: 22px;
-    }
-  }
-  div:nth-child(6){
-    span{
-      padding-top: 22px;
-    }
-  }
-}
-.uslugiIc__link{
-margin-top: 40px;
-display: inline-block;
-margin-bottom: 60px;
-}
+
 .sidebar{
   margin-top: 8px;
 }
@@ -277,80 +176,7 @@ margin-bottom: 10px;
     bottom: -10px;
   }
 }
-.news-item{
-  margin-top: 30px;
-}
-.news-item__head{
-     padding: 0;
-     margin: 0;
-h3{
-color:  #3b7db0;
-font-size: 18px;
-font-weight: 300;
-text-align: left;
-}
-  img{
- 
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-}
-.news-item__text{
-  color:  #000000;
-font-size: 14px;
-font-weight: 400;
-text-align: left;
-line-height:18px;
-}
-.content{
-  h2{
-    color:  #000000;
-font-size: 30px;
-font-weight: 700;
-line-height: 30px;
-text-align: left;
-margin-bottom: 30px;
-  }
-  p{
-    color:  #000000;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-margin-bottom: 20px;
 
-  }
-  ul{
-    margin-top: -20px;
-    list-style-type: circle;
-    padding-left: 20px;
-    color:#223;
-  }
-  li{
-    color:#3b7db0;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  li span{
-    color:  #000;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-  }
-  h4{
-    color:  #000000;
-font-size: 24px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-margin-bottom: 30px;
-  }
-}
-.sidebar__slider{
-  margin-top: 30px;
-}
 .footer{
   @extend .header;
 
@@ -395,3 +221,107 @@ margin-bottom: 30px;
     }
   }
 }
+.sidebar__slider{
+  img{
+    width: 100%;
+  }
+  .slick-prev{
+    width: 25px;
+    height: 25px;
+    background: url("../img/arrow-carusel-ic.png") no-repeat;
+    border: none;
+    position: absolute;
+    top: -51px;
+    right: 34px;
+  }
+  .slick-next{
+    @extend .slick-prev;
+    transform: rotate(180deg);
+    right: 0px;
+  }
+
+}
+
+//modal
+.modalCallBack{
+  &__openBackground{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+    z-index: 3;
+    cursor: pointer;
+    display: none;
+  }
+  &__openBackground.is-active{
+    display: block;
+  }
+  position: relative;
+  &__close{
+        display: block;
+    background: #fff;
+    width: 10px;
+    margin: 0 auto;
+    height: 10px;
+    font-size: 26px;
+    position: absolute;
+    color: #404142;
+    right: 45px;
+    top: 15px;
+    cursor: pointer;
+  }
+  &__open{
+        position: fixed;
+    top: 31%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 17;
+    background-color: #fff;
+    min-width: 303px;
+    width: 35%;
+    max-width: 620px;
+    height: auto;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: none;
+  }
+  &__open.is-active{
+    
+    display: block;
+  }
+  &__formTitle{
+    color: #79c2ed;
+    font-size: 1.8em;
+    font-weight: lighter;
+    //text-transform: uppercase;
+  }
+  &__input{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000;
+    padding-left: 5px;
+
+
+  }
+  &__sendOrder{
+    padding: 5px 10px;
+    //background-color: $lightMainColor2;
+    //display: inline-block;
+    //border-radius: 3px;
+    color: #fff;
+    background: $lightMainColor2;
+    border-radius: 3px;
+    border: 1px solid transparent;
+  }
+  &__form{
+    .modalCallBack__input + .modalCallBack__input{
+      margin-top: 10px;
+    }
+  }
+}
+
+
