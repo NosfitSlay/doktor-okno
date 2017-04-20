@@ -11,13 +11,13 @@
         e.preventDefault();
         $(".modalCallBack__openBackground").fadeIn();
         $(".modalCallBack__open").fadeIn();
+
     });
 
     $('.modalCallBack__openBackground, .modalCallBack__close').on('click',function(){
        $(".modalCallBack__openBackground").fadeOut();
        $(".modalCallBack__open").fadeOut();
-    })
-
-  });
+    });
+ });
 
 
