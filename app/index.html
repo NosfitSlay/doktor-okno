@@ -8,13 +8,9 @@
 
     <title>Доктор Окно</title>
     <link rel="icon" type="png/x-icon" href="img/logo.png">
-<!--
-    <link media="all" rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link media="all" rel="stylesheet" href="css/slick.css" type="text/css">-->
 
-    <link rel="stylesheet" href="css/slicknav.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
     <link media="all" rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -342,10 +338,17 @@
             <p>Заказать обратный звонок</p>
             <!--<span>Доктор Окно</span>-->
             <form  action="modalCallBack__form" id="pop-checkbox">
-                <input type="text" class="modalCallBack__input" name="user-name" value="" placeholder="Имя" required>
-                <input type="text" class="modalCallBack__input" name="phone" value="" placeholder="Телефон" required>
-                <button href="#"   class="modalCallBack__sendOrder" type="submit">Заказать</button>
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" class="form-control" name="user-name" value="" placeholder="Имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваше телефон:</label>
+                <input type="text" class="form-control" name="phone" id="phone" value="" placeholder="Телефон" required>
+                </div>
+                <button href="#"   class="btn modalCallBack__sendOrder" type="submit">Заказать</button>  
             </form>
+
         </div>
     </div>
 
