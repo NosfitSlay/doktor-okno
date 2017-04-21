@@ -21,11 +21,7 @@ body{
     font-size: 10px;
   }
   .logo{
-    img{
-      @media (max-width: 768px) {
-        display: none;
-      }
-    }
+    
     ul{
       display: inline-block;
       vertical-align: top;
@@ -264,10 +260,13 @@ margin-bottom: 10px;
     padding-left: 0;
     margin-top: 0;
   }
-  .companyDetals{
-    @media (max-width: 768px){
+  .companyDetals__documenst{
+@media (max-width: 468px){
       display: none;
     }
+  }
+  .companyDetals{
+    
     &__items{
       display: inline-block;
       font-size: 1.2em;
@@ -275,12 +274,15 @@ margin-bottom: 10px;
     .companyDetals__items + .companyDetals__items{
       padding-left: 20px;
     }
-  }
-  .companyDetals__documenst{
-    @media (max-width: 992px){
-      display: none;        
+    a{
+      color:#000;
+    }
+    a:hover{
+      text-decoration: underline;
     }
   }
+  
+
 }
 .sidebar__slider{
   @media (max-width: 767px){
@@ -307,32 +309,9 @@ margin-bottom: 10px;
 
 //modal
 .modalCallBack{
-  &__openBackground{
-   // background-color: rgb(0, 0, 0);
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.7;
-    z-index: 8;
-    cursor: pointer;
-  display: none;
-  }
+ 
   position: relative;
-  &__close{
-    display: block;
-    background: #fff;
-    width: 10px;
-    margin: 0 auto;
-    height: 10px;
-    font-size: 26px;
-    position: absolute;
-    color: #404142;
-    right: 45px;
-    top: 15px;
-    cursor: pointer;
-  }
+ 
   &__open{
     position: fixed;
     top: 31%;
@@ -341,7 +320,7 @@ margin-bottom: 10px;
     z-index: 17;
     background-color: #fff;
     min-width: 303px;
-    width: 35%;
+    width: 45%;
     max-width: 620px;
     height: auto;
     padding: 20px;
@@ -354,14 +333,18 @@ margin-bottom: 10px;
   }
   &__formTitle{
     color: #79c2ed;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: lighter;
+    padding: 10px;
   }
   &__input{
-    width: 100%;
+        width: 100%;
     margin-bottom: 10px;
     color: #000;
     padding-left: 5px;
+    border: 1px solid #0e5884;
+    padding: 5px;
+    font-size: 1.5rem;
   }
   &__sendOrder{
     padding: 5px 10px;

@@ -43,7 +43,7 @@
                     <img src="img/phone-ic.png" alt="phone-ic" class="phones__phone">
                     <div class="contacts">
                         <h4 class="contacts__number">+7 (495)<span>532-62-53</span></h4>
-                        <a href="#" class="contacts__callBack">Перезвоните мне</a>
+                        <a data-fancybox data-src="#callback" href="javascript:;" class="contacts__callBack">Перезвоните мне</a>
                     </div>
                 </li>
                 <li class="phones">
@@ -55,7 +55,7 @@
                 </li>
             </ul>
             <div class="callToOrder">
-                <a href="#" class="orderCallback" data-fancybox data-caption="My caption">
+                <a data-fancybox data-src="#callback" href="javascript:;" class="orderCallback" >
                     <img src="img/toOrderCall.png" alt="OrderCall" class="callToOrder__logo">
                     <div class="callToOrder__wrapper">
                         <h3 class="callToOrder__caption text-right">Закажите <span>звонок</span></h3>
@@ -91,37 +91,37 @@
         <div class="container">
             <section class="uslugiIc">
                 <div class="row">
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__fixAlumWindows"></div>
                             <span>Ремонт алюминиевых окон</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__fixPlastWindows"></div>
                             <span>Ремонт пластиковых окон</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__fixWoodWindows"></div>
                             <span>Ремонт деревянных окон</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="">
                             <div class="uslugiIc__fixPlastDoors"></div>
                             <span>Ремонт пластиковых дверей</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__setPlastOtkos"></div>
                             <span>Установка пластиковых откосов</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="">
                             <div class="uslugiIc__moskitGrid"></div>
                             <span>Москитные сетки для окон</span>
@@ -129,37 +129,37 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__regPlastOkon"></div>
                             <span>Регулировка пластиковых окон</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__fixCangeGlass"></div>
                             <span>Ремонт и замена стеклопакетов</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__changeplotnitel"></div>
                             <span>Замена уплотнителя на пластиковых окнах</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__obdelkaBalkov"></div>
                             <span>Отделка балконов</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__uteplenOkon"></div>
                             <span>Утепление окон по шведской технологии</span>
                         </a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="col-md-2 col-sm-4 col-xs-4">
                         <a class="uslugiIc__link" href="#">
                             <div class="uslugiIc__vnutrPodokonik"></div>
                             <span>Внутренние подоконники</span>
@@ -213,6 +213,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="sidebar">
+                                <div class="sidebar__block">
                                 <div class="sidebar__title">Новости</div>
                                 <div class="news">
                                     <div class="news-item">
@@ -247,18 +248,21 @@
                                         </div>
                                     </div>
                                 </div>
+                                </div>
+                                <div class="sidebar__block">
                                 <div class="sidebar__title">Сертификаты</div>
                                 <div class="sidebar__slider">
-                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Caption #1">
+                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Сертификат №1">
                                         <img src="img/sertificate.jpg" alt="" >
                                     </a>
-                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Caption #1">
+                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Сертификат №2">
                                         <img src="img/sertificate.jpg" alt="" >
                                     </a>
-                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Caption #1">
+                                    <a class="sidebar__slider__item" href="img/sertificate.jpg" data-fancybox="group" data-caption="Сертификат №3">
                                         <img src="img/sertificate.jpg" alt="" >
                                     </a>
                                 </div>
+                                 </div>
                             </div>
                         </div>
                     </div>
@@ -272,7 +276,7 @@
 
         <div class="container">
             <footer class="footer">
-                <a href="#">
+                <a class="footer__logo" href="#">
                     <div class="logo">
                         <img src="img/logo.png" alt="logo">
                         <ul>
@@ -291,19 +295,15 @@
                         <li class="category__item"><a href="#">СМИ о нас</a></li>
                         <li class="category__item"><a href="#">Новости</a></li>
                     </ul>
-                    <!--<ul class="category__list">-->
-                        <!--<li class="category__item"><a href="#">Фермеры</a></li>-->
-                        <!--<li class="category__item"><a href="#">Стать нашим фермером</a></li>-->
-                        <!--<li class="category__item"><a href="#">Рецепты</a></li>-->
-                    <!--</ul>-->
+                  
                 </div>
 
                 <ul class="phonesWrap">
                     <li class="phones">
                         <img src="img/phone-ic.png" alt="phone-ic" class="phones__phone">
-                        <div href="#" class="contacts" data-fancybox data-caption="My caption">
+                        <div href="#" class="contacts" >
                             <h4 class="contacts__number">+7 (495)<span>532-62-53</span></h4>
-                            <a href="#" class="contacts__callBack">Перезвоните мне</a>
+                            <a data-fancybox data-src="#callback" href="javascript:;" class="contacts__callBack">Перезвоните мне</a>
                         </div>
                     </li>
                     <li class="phones">
@@ -319,8 +319,8 @@
                         <li class="companyDetals__item">ООО «АДИКА»</li>
                         <li class="companyDetals__item">Ремонт окон от Доктор Окно</li>
                         <li class="companyDetals__item">Россия г. Москва, проспект Мира, 53 с1</li>
-                        <li class="companyDetals__item">Телефон: +7(495) 641-84-47</li>
-                        <li class="companyDetals__item">Email: tempo.v5@yandex.ru</li>
+                        <li class="companyDetals__item">Телефон: <a href="tel:+74956418447">+7(495) 641-84-47</a></li>
+                        <li class="companyDetals__item">Email:<a href="mailto:tempo.v5@yandex.ru"> tempo.v5@yandex.ru</a></li>
                         <li class="companyDetals__item">Работаем: круглосуточно!</li>
                     </ul>
                     <ul class="companyDetals__items companyDetals__documenst">
@@ -336,11 +336,7 @@
         </div>
     </main>
      <!--PopUp-->
-    <div class="modalCallBack__openBackground"></div>
-    <div class="modalCallBack__open">
-        <div class="modalCallBack__close close-pop-up">
-            <span class="">X</span>
-        </div>
+    <div id="callback" class="modalCallBack__open">
 
         <div class="modalCallBack__formTitle">
             <p>Заказать обратный звонок</p>
@@ -352,12 +348,6 @@
             </form>
         </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-
-    <!-- Подкл. Моб.Мен. --> 
-    <script src="js/jquery.slicknav.min.js"></script>
 
     <script src="js/libs.min.js"></script>
 </body>
