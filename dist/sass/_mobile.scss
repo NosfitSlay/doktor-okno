@@ -7,12 +7,21 @@
   .footer{
     flex-wrap: wrap;
     padding-top: 30px;
+    .phonesWrap{
+      width: 50%;
+      flex-basis: 50%;
+      .phones{
+        justify-content: flex-end;
+      }
+
+    }
   }
-  .phonesWrap{
-    width: 50%;
-    flex-basis: 50%;
-    .phones{
-      justify-content: flex-end;
+  header.header{
+    .phonesWrap{
+      flex-basis: 40%;
+    }
+    h4{
+      font-size: 14px;
     }
 
   }
@@ -21,7 +30,7 @@
     flex-basis: 50%;
   }
   .companyDetals{
-        width: 100%;
+    width: 100%;
     align-items: center;
     align-self: center;
     align-content: center;
@@ -32,11 +41,9 @@
   .companyDetals__documenst{
     display: block;
   }
+
 }
-@media(max-width:768px){
-  .sidebar{
-    display: flex;
-  }
+@media(max-width:767px){
   .sidebar__block:first-child{
     width: 65%;
     flex-basis: 65%;
@@ -45,11 +52,43 @@
     width: 35%;
     flex-basis: 35%;
   }
+  .sidebar{
+    display: flex;
+  }
+}
+@media(max-width:768px){
   .news{
     padding-right: 15px;
   }
   .sidebar__title{
     font-size: 18px;
+  }
+  header .logo__wrap.logo__wrap{
+    order:0;
+  }
+  .headerContainer header {
+    height: 145px;
+    .logo__wrap {
+      flex-basis: 50%;
+      width: 50%;
+      order:0;
+    }
+    .phonesWrap{
+      width: 50%;
+      flex-basis: 100%;
+      order: 2;
+      display: flex;
+      justify-content: space-around;
+    }
+    .contacts__callBack.contacts__callBack{
+      display: none;
+    }
+    .callToOrder{
+      order:1;
+    }
+  }
+  .headerNav{
+    margin-top: -11px;
   }
 }
 @media(max-width:580px){
@@ -64,10 +103,10 @@
   .uslugiIc__link{
     height: 90px;
   }
-  .phonesWrap{
+  .footer .phonesWrap{
     width: 100%;
     flex-basis: 100%;
-        padding-left: 0;
+    padding-left: 0;
     margin-top: 0;
     display: flex;
     justify-content: space-around;
@@ -82,19 +121,36 @@
   }
   .sidebar{
     flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
   }
   .sidebar__block:last-child{
     width: 50%;
     flex-basis: 50%;
+  }
+
+  .headerContainer header{
+    height: 200px;
+    .logo__wrap{
+      flex-basis: 100%;
+      text-align: center;
+    }
+    .phonesWrap{
+      flex-basis: 40%;
+      order: 0;
+      display: block;
+      margin-left: 0px;
+    }
+    .callToOrder{
+      flex-basis: 40%;
+    }
   }
 }
 @media(max-width:435px){
   .footer .companyDetals__documenst{
     display: none;
   }
-  .phonesWrap{
+  .footer .phonesWrap{
     flex-wrap: wrap;
     .phones{
       width: 100%;
@@ -102,5 +158,36 @@
       justify-content: center;
     }
   }
+  .headerContainer .callToOrder__result{
+    display: none;
+  }
+  .headerContainer header .phonesWrap{
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .headerContainer header {
+    height: 150px;
+  }
+  .sidebar__block:last-child {
+    width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .logo{
+    padding-top: 20px;
+  }
+  .headerContainer .callToOrder{
+    flex-basis: 100%;
+  }
 
+  .callToOrder__caption{
+    text-align: center;
+  }
+  .phonesWrap{
+    padding-top: 20px;
+  }
 }

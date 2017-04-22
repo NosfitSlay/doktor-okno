@@ -10,9 +10,9 @@
 @import 'mobile';
 
 .fixingWindowsInRegion{
-  background: url("../img/fixingWindows.jpg") no-repeat;
+  background: url("../img/fixingWindows.jpg") no-repeat center;
   height: 461px;
-  background-size: 100%;
+  background-size: cover;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -26,11 +26,23 @@
   @media (max-width: 1199px){
     height: 365px;
   }
-  @media (max-width: 864px) {
-    height: 311px;
-  }
+  // @media (max-width: 864px) {
+  //   height: 311px;
+  // }
   @media (max-width: 864px) {
     height: 278px;
+  }
+  @media (max-width: 666px) {
+    height: 239px;
+  }
+  @media (max-width: 580px) {
+    height: 172px;
+  }
+  @media (max-width: 420px) {
+    height: 151px;
+  }
+  @media (max-width: 420px) {
+    height: 252px;
   }
   &__wrap{
     display: inline-block;
@@ -44,11 +56,22 @@
     background-color: $lightMainColor2;
     color: #fff;
     display: inline-block;
+    @media (max-width: 666px){
+      width: 85%;
+    }
+    @media (max-width: 420px){
+      font-size: 2.7em;
+    }
+
   }
   &__this{
     color: #000;
     padding-top: 36px;
     font-size: 2.4em;
+    @media (max-width: 864px){
+      padding-top: 8px;
+      font-size: 2em;
+    }
   }
 }
 .uslugiIc{

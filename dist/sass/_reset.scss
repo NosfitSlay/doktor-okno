@@ -48,7 +48,11 @@ body{
   @media (max-width: 864px) {
     font-size: 8px;
   }
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 7px;
   }
+  @media (max-width: 580px) {
+    font-size: 5px;
+  }
+
 }

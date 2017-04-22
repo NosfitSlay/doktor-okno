@@ -6,7 +6,20 @@ body{
   background-repeat: repeat-x;
   background-position: left top;
 }
-
+.headerContainer{
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (max-width: 666px){
+    padding-left: 0;
+    padding-right: 0;
+    .logo{
+      padding-left: 5px;
+    }
+    .callToOrder{
+      padding-right: 5px;
+    }
+  }
+}
 .header{
   height: 137px;
   margin-top: 15px;
@@ -19,9 +32,27 @@ body{
   }
   @media (max-width: 768px) {
     font-size: 10px;
+    flex-flow: row wrap;
+    height: 200px;
+    justify-content: center;
+  }
+  .phonesWrap{
+    @media (max-width: 991px) {
+      flex-basis: 25%;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+     // flex-basis: 20%;
+      //width: 20%
+    }
+  }
+  .logo__wrap{
+    @media (max-width: 768px) {
+      order: 1;
+      flex: 1 50%;
+    }
   }
   .logo{
-    
     ul{
       display: inline-block;
       vertical-align: top;
@@ -46,9 +77,10 @@ body{
     align-items: center;
     img{
       padding-left: 96px;
-      @media (max-width: 1199px) {
-        display: none;
-      }
+
+    }
+    @media (max-width: 1199px) {
+      display: none;
     }
     &__method{
       display: inline-block;
@@ -69,6 +101,11 @@ body{
     @media (max-width: 1199px) {
       padding-left: 0;
     }
+    @media (max-width: 768px) {
+      order: 0;
+      width: 100%;
+    }
+
   }
   .phones{
       display: flex;
@@ -89,9 +126,13 @@ body{
         font-size: 1em;
       }
       &__number{
+         @media (max-width: 768px) {
+           font-size: 1.5em;
+         }
         span{
           font-size: 1.33em;
           font-weight: bold;
+
         }
       }
       &__callBack{
@@ -99,8 +140,11 @@ body{
         color: $darkMainColor;
         border-bottom: 1px dotted $darkMainColor;
         font-size: 0.77em;
+        @media (max-width: 666px) {
+        //  font-size: 1.4em;
+        }
         @media (max-width: 768px) {
-          display: none;
+        //  display: none;
         }
       }
     }
@@ -127,6 +171,10 @@ body{
     @media (max-width: 1199px) {
       padding-left: 0;
     }
+    @media (max-width: 768px) {
+      order: 2;
+     width: 50%;
+    }
     &__wrapper{
       display: inline;
     }
@@ -152,6 +200,11 @@ body{
       color: $lighTextColor;
       font-size: 1.2em;
       width: 115px;
+      @media (max-width: 768px) {
+        width:100%;
+        text-align: right;
+      }
+      
     }
   }
 }
@@ -167,6 +220,9 @@ body{
   background: linear-gradient(to bottom, #87c9f1, #4c9ed3);
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    display: none;
+  }
   li:first-child{
     border-radius: 3px 0 0 3px;
     padding-left: 10px;
@@ -195,6 +251,17 @@ body{
       display: block;
       padding: 15px 0;
       color: #fff ;
+    }
+  }
+}
+.slicknav_menu{
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    margin-bottom: 20px;
+    .slicknav_nav{
+      top: 60px;
+      background: rgb(121, 194, 237);
     }
   }
 }
@@ -285,7 +352,7 @@ margin-bottom: 10px;
 
 }
 .sidebar__slider{
-  @media (max-width: 767px){
+  @media (max-width: 768px){
     padding-bottom: 10px;
   }
   img{
@@ -309,9 +376,7 @@ margin-bottom: 10px;
 
 //modal
 .modalCallBack{
- 
   position: relative;
- 
   &__open{
     position: fixed;
     top: 31%;
